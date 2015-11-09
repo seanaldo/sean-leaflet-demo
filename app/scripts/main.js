@@ -30,6 +30,10 @@
 
 	var map = L.map('map')
 	    .addLayer(mapboxTiles)
-	    .setView([42.3610, -71.0587], 15);
+	    .setView([-37.8136, 144.9631], 15);
+
+	L.marker([-37.779, 144.9190]).addTo(map)
+    .bindPopup('Somewhere near Sean&apos;s house')
+    .openPopup();
 
 }(window, document, L));
