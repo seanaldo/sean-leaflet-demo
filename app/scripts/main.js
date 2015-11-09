@@ -32,8 +32,28 @@
 	    .addLayer(mapboxTiles)
 	    .setView([-37.8136, 144.9631], 15);
 
-	L.marker([-37.779, 144.9190]).addTo(map)
+	L.marker([-37.784, 144.9190]).addTo(map)
     .bindPopup('Somewhere near Sean&apos;s house')
     .openPopup();
+
+    // Add a circle...
+     /*    var circleLocation = new L.LatLng(-37.8136, 144.9631),
+             circleOptions = {
+                 color: 'red', 
+                 fillColor: '#f03', 
+                 fillOpacity: 0.5
+             };
+             
+         var circle = new L.Circle(circleLocation, 500, circleOptions);
+         map.addLayer(circle);
+
+         // ...and a triangle
+         var p1 = new L.LatLng(-37.8236, 144.9691),
+             p2 = new L.LatLng(-37.8136, 144.9431),
+             p3 = new L.LatLng(-37.8186, 144.9231),
+             polygonPoints = [p1, p2, p3];
+         
+         var polygon = new L.Polygon(polygonPoints);
+         map.addLayer(polygon);    */     
 
 }(window, document, L));
