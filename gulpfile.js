@@ -69,14 +69,14 @@ gulp.task('default', ['clean'], function () {
 gulp.task('connect', function(){
     $.connect.server({
         root: 'app',
-        port: 9000,
+        port: 5000,
         livereload: true
     });
 });
 
 // Open
 gulp.task('serve', ['connect'], function() {
-  open("http://localhost:9000");
+  open("http://localhost:5000");
 });
 
 // Inject Bower components
